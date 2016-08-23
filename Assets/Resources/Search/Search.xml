@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Canvas renderMode="ScreenSpaceOverlay" xmlns="http://schema.smallplanet.com/PlanetUnity2.xsd" >
+    <Color color="#FFFFFFFF" anchor="stretch,stretch" />
+</Canvas>
