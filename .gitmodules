@@ -1,3 +1,6 @@
 [submodule "Assets/PlanetUnity2"]
 	path = Assets/PlanetUnity2
 	url = https://github.com/SmallPlanetUnity/PlanetUnity2
+[submodule "Assets/litjson"]
+	path = Assets/litjson
+	url = https://github.com/SmallPlanetUnity/litjson

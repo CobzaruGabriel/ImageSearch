@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Canvas renderMode="ScreenSpaceOverlay" xmlns="http://schema.smallplanet.com/PlanetUnity2.xsd" >
+<Canvas renderMode="ScreenSpaceCamera" xmlns="http://schema.smallplanet.com/PlanetUnity2.xsd" >
     <Color color="#FFFFFFFF" anchor="stretch,stretch" />
 
-    <Image resourcePath="Search/inputFieldBackground" bounds="0,-40,700,48" pivot="0.5,1" anchor="top,stretch">
+    <GridTable title="ImageResultsTable" expandToFill="false" bounds="@eval(0,0,w,h-68)" anchor="stretch,stretch" />
+
+    <Color color="#DDDDDDFF" bounds="@eval(0,0,w,68)" pivot="0,1" anchor="top,stretch" />
+
+    <Image resourcePath="Search/inputFieldBackground" bounds="10,-10,700,48" pivot="0,1" anchor="top,stretch">
     	<InputField title="SearchField" onValueChanged="PerformSearch" sizeToFit="true" maxFontSize="28" alignment="middleLeft" bounds="@eval(10,10,w-20,h-20)" anchor="stretch,stretch" />
 
     	<ImageButton resourcePath="Search/searchButton" onTouchUp="PerformSearch" bounds="@eval(0,0,48,48)" pivot="0,0.5" anchor="middle,right">
     		<Image resourcePath="Search/searchIcon" pivot="0.5,0.5" bounds="@eval(0,0,w-20,h-20)" anchor="middle,center" />
     	</ImageButton>
     </Image>
-
 
     <Code class="SearchController">
     	<Notification name="PerformSearch" />
