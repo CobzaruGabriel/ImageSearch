@@ -1,10 +1,14 @@
-# Google Image Search
+# Image Search Example
 
 ## Built with Planet Unity
 
-This is a simple example of how to build Unity UI using [Planet Unity](https://github.com/SmallPlanetUnity/PlanetUnity2).
+This is a moderate example of how to build Unity UI using [Planet Unity](https://github.com/SmallPlanetUnity/PlanetUnity2); it creates an application which allows you to perform an image by entering some text in an input field, pressing the search button, performing some asynchronous web requests and populating a grid table with the resulting images.
+
+
 
 ![kittens!](https://github.com/SmallPlanetUnity/GoogleImageSearch/raw/master/kittens.png)
+
+
 
 
 ## Reconstructing from scratch
@@ -115,6 +119,7 @@ While having access to the completed project is nice, it can be much more inform
 # All done
 
 At this point you should be able to play the Unity Editor, enter a search text in the input field, press the search button, and see the image search results populate the grid table.
+
 
 ## License
 
