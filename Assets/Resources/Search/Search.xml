@@ -4,11 +4,17 @@
 
     <GridTable title="ImageResultsTable" expandToFill="false" bounds="@eval(0,0,w,h-68)" anchor="stretch,stretch" />
 
+
+	<!-- This is a gray bar going along the top of the screen ; this will eventually cover the grid of images when they scroll up under the input field -->
     <Color color="#DDDDDDFF" bounds="@eval(0,0,w,68)" pivot="0,1" anchor="top,stretch" />
 
+	<!-- This is the background images for the input field -->
     <Image resourcePath="Search/inputFieldBackground" bounds="10,-10,700,48" pivot="0,1" anchor="top,stretch">
+		
+		<!-- This is the actual input field component -->
     	<InputField title="SearchField" onValueChanged="PerformSearch" sizeToFit="true" maxFontSize="28" alignment="middleLeft" bounds="@eval(10,10,w-20,h-20)" anchor="stretch,stretch" />
 
+		<!-- This is the blue search button, attached to the right side of the text field -->
     	<ImageButton resourcePath="Search/searchButton" onTouchUp="PerformSearch" bounds="@eval(0,0,48,48)" pivot="0,0.5" anchor="middle,right">
     		<Image resourcePath="Search/searchIcon" pivot="0.5,0.5" bounds="@eval(0,0,w-20,h-20)" anchor="middle,center" />
     	</ImageButton>
